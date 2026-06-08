@@ -1,4 +1,4 @@
-#JupyterLab1.github.io
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -215,28 +215,58 @@
          <a href="https://ayana-sarkar.github.io/JupyterLab4.github.io/" class="btn">Plotting with List</a>
         <a href="https://ayana-sarkar.github.io/JupyterLab5.github.io/" class="btn">Plotting with Arrays</a>
         <a href="https://ayana-sarkar.github.io/JupyterLab2.github.io/" class="btn">Interpolation</a>
-        <h1>Let's Practice more!</h1>
+        <h1>Special Functions</h1>
         </div>
     </section>
 
     <section id="curriculum" class="curriculum">
             <div class="card">
-                <h2>1. Interface & Setup</h2>
-                <p>Install Anaconda, launch JupyterLab, and master the left sidebar, file browser, and tabbed layouts.</p>
-            </div>
-            <div class="card">
-                <h2>2. Cells & Markdown</h2>
-                <p>Grlding certification (like LEED etc) systems to ensure adherence to 
-                sustainable building standards and performance criteria</p>
-            </div>
-            <div class="card">
-                <h2>3. Keyboard Shortcuts</h2>
-                <p>Speed up your workflow drastically using Command and Edit modes, cell execution shortcuts, and deletions.</p>
-            </div>
-            <div class="card">
-                <h2>4. Data & Visuals</h2>
+                <h2>1.Bessel functions</h2>
                 <img src="htt.png.png" alt="Data Visualization" class="box-image">
-                <p>Import CSVs, run Pandas operations, and render beautiful Matplotlib/Seaborn plots directly inside your notebook.</p>
+                <img src="htt.png.png" alt="Data Visualization" class="box-image">
+                <p>Line 1: scipy.special.jv(v, z): This is the SciPy implementation for the Bessel function of the first kind of real order v and complex/real argument z, typically denoted mathematically as Jv(x).as bessel: This renames the function to bessel within the script to make the subsequent code more readable.<br> 
+                Line 2: creates a NumPy array of 500 equally spaced points ranging from x = 0 to x = 15.<br> 
+                Line3: range(0, 6): We are about to draw 6 curves, so this loops through the integer values 0, 1, 2, 3, 4, 5. These represent the orders (v) of the Bessel functions.<br> 
+                Line 4: bessel(v, xbsl): In each iteration, SciPy vectorizes the operation. It evaluates the Bessel function of order v for all 500 points stored in xbsl simultaneously, returning an array of 500 corresponding y-values. <br> 
+                Every time this loop runs, (plt.plot ) - overlays a new curveJ0(x) through J5(x) onto the same figure in a distinct color. <br>
+                Line5-6: : plt.xlim: Clamps the horizontal viewing window tightly between x = 0 and x = 15.<br> 
+                plt.ylim: Sets the vertical bounds from -0.5 to 1.1. This is ideal for these lower-order Bessel functions because J0(x)=1and they all damp out and oscillate well within these boundaries.<br> 
+                Line 7: loc = 0: Tells Matplotlib to choose the "best" location for the legend box automatically, placing it where it minimizes overlap with the plotted data lines.<br>
+                <img src="htt.png.png" alt="Data Visualization" class="box-image"></p>
+            </div>
+            <div class="card">
+                <h2>2.Legendre Functions</h2>
+                <img src="htt.png.png" alt="Data Visualization" class="box-image">
+                <img src="htt.png.png" alt="Data Visualization" class="box-image">
+                <p>3rd-order Legendre polynomial, mathematically written as:<br> 
+                P3(x) = ½ *(5x3 - 3x) = 2.5x3 - 1.5x <br> 
+                In The First Output , The Array [ 2.5, 0. , -1.5, 0. ]: This array contains the coefficients of the polynomial, ordered from the highest power to the lowest power (x3, x2, x1, x0). <br> 
+                In The Second Output, the top 3 represents the exponent (x3). The 3 is sitting directly over the first x, meaning 2.5 x3.<br> 
+                The second x has nothing above it, which implies a default power of 1(meaning -1.5x1).<br> 
+                Let’s plot all six Legendre polynomials for x ∈ (−1, 1). Polynomials within that range are orthogonal with weight w = 1 <br>
+                <img src="htt.png.png" alt="Data Visualization" class="box-image">
+                Line 1: Why [-1, 1]? Legendre polynomials are natively orthogonal over the domain [-1, 1]. This is the standard mathematical interval used to study and plot them.<br>
+                Line3: y0s(x) : Passing the array x into it evaluates the polynomial at all 200 points simultaneously, returning a new array of 200 numeric y-values. The script repeats this process efficiently on single lines using semicolons (e.g., y1s=Lp(1); y1=y1s(x)) all the way up to y6.<br> 
+                pp:  Matplotlib accepts an arbitrary number of (x, y) pairs in a single call. This command plots 7 distinct lines sequentially: (x, y0), then (x, y1), up to (x, y6). </p>
+                <img src="htt.png.png" alt="Data Visualization" class="box-image">
+            </div>
+            <div class="card">
+                <h2>3. Airy Functions</h2>
+                <img src="htt.png.png" alt="Data Visualization" class="box-image">
+                <p>Line 2: Evaluates the Airy functions over your entire x domain in a single operation.<br> 
+                The scipy.special.airy() function takes the input array x and simultaneously calculates and returns four separate output arrays of the exact same length (201 points each):<br> 
+                ai: The Airy function of the first kind, Ai(x).<br> 
+                aip: The derivative of the first kind,Ai'(x).<br> 
+                bi: The Airy function of the second kind, Bi(x).<br> 
+                bip: The derivative of the second kind, Bi’(x).<br> 
+                Line 7: loc='upper left' explicitly forces the box into the top-left corner of the window. This is ideal because the Airy functions damp out/stay low on the left side of this plot, leaving that space open.<br>
+                Matplotlib commands often return text or handle objects. Assigning the output to a throwaway variable name (like _t or just _) prevents Jupyter Notebook from printing a raw text line description of the legend object.</p>
+                <img src="htt.png.png" alt="Data Visualization" class="box-image">
+            </div>
+            <div class="card">
+                <h2>4.</h2>
+                <img src="htt.png.png" alt="Data Visualization" class="box-image">
+                <p>o</p>
             </div>
     </section>
 
