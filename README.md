@@ -215,6 +215,7 @@
          <a href="https://ayana-sarkar.github.io/JupyterLab4.github.io/" class="btn">Plotting with List</a>
         <a href="https://ayana-sarkar.github.io/JupyterLab5.github.io/" class="btn">Plotting with Arrays</a>
         <a href="https://ayana-sarkar.github.io/JupyterLab2.github.io/" class="btn">Interpolation</a>
+        <a href="https://ayana-sarkar.github.io/JupyterLab1.github.io/" class="btn">Special func</a>
         <h1>Special Functions</h1>
         </div>
     </section>
