@@ -205,8 +205,6 @@
 
     <nav>
         <div class="logo">🚀 Learn<span>Jupyter</span></div>
-        <div class="nav-links">
-        </div>
     </nav>
 
     <section class="hero">
@@ -216,6 +214,8 @@
         <a href="https://ayana-sarkar.github.io/JupyterLab5.github.io/" class="btn">Plotting with Arrays</a>
         <a href="https://ayana-sarkar.github.io/JupyterLab2.github.io/" class="btn">Interpolation</a>
         <a href="https://ayana-sarkar.github.io/JupyterLab1.github.io/" class="btn">Special func</a>
+        <a href=" https://ayana-sarkar.github.io/JupyterLab3.github.io/" class="btn">Let's Practice more!</a>
+
         <h1>Special Functions</h1>
         </div>
     </section>
@@ -264,11 +264,7 @@
                 Matplotlib commands often return text or handle objects. Assigning the output to a throwaway variable name (like _t or just _) prevents Jupyter Notebook from printing a raw text line description of the legend object.</p>
                 <img src="Screenshot 2026-06-08 132303.png" alt="Data Visualization" class="box-image">
             </div>
-            <div class="card">
-                <h2>4.</h2>
-                <img src="htt.png.png" alt="Data Visualization" class="box-image">
-                <p>o</p>
-            </div>
     </section>
 
 </body>
+</html>
