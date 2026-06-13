@@ -265,6 +265,8 @@
                 <img src="Screenshot 2026-06-08 132303.png" alt="Data Visualization" class="box-image">
             </div>
     </section>
-
+    <footer><a href="https://ayana-sarkar.github.io/JupyterLab2.github.io/" class="btn">Previous</a>
+        <a href=" https://ayana-sarkar.github.io/JupyterLab3.github.io/" class="btn">Next</a>
+    </footer>
 </body>
 </html>
